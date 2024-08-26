@@ -1,0 +1,176 @@
+/* Font imports */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header styles */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .logo {
+    max-width: 150px;
+}
+
+/* Navigation styles */
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styles */
+.hero, .about-hero, .contact-hero {
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero {
+    background-image: url('../images/header.jpg');
+}
+
+.about-hero {
+    background-image: url('../images/header.jpg');
+}
+
+.contact-hero {
+    background-image: url('../images/header.jpg');
+}
+
+.hero h1, .about-hero h1, .contact-hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero p, .about-hero p, .contact-hero p {
+    font-size: 1.2em;
+}
+
+/* About details section styles */
+.about-details {
+    padding: 50px 0;
+}
+
+.about-details h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-details p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Team grid styles */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    flex: 1 1 200px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.team-member h3 {
+    margin: 0;
+}
+
+/* Contact details styles */
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column;
+    }
+}
